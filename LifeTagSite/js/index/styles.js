@@ -27,7 +27,7 @@ function style(){
     heightByWidth("#gardenLabel", 0.1);
     heightByWidth("#schoolLabel", 0.1);
     heightByWidth("#findButt", 0.15);
-
+    heightByWidth("#helpBoxesLabel", 0.2);
 
     //font
     fontByHeight("#INeedHelp", 0.42);
@@ -35,6 +35,7 @@ function style(){
     fontByHeight("#helpTel", 0.5);
     fontByHeight("#tip", 0.4);
     fontByHeight("#helpCityLabel", 0.58);
+    fontByHeight("#helpBoxesLabel", 0.58);
     fontByHeight("#helpTelLabel", 0.58);
     fontByHeight("#homeLabel", 0.9);
     fontByHeight("#jobLabel", 0.9);

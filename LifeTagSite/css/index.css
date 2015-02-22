@@ -39,6 +39,15 @@ body{
     font-family: ProximaBold;
 }
 
+#helpBoxesLabel{
+    position: absolute;
+    top: 45%;
+    left: 7%;
+    width: 30%;
+    color: white;
+    font-family: ProximaBold;
+}
+
 #findButt{
      position: absolute;
      width: 43%;
