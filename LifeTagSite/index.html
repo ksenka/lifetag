@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <title>LifeTag</title>
     <script type="text/javascript" src="js/common/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/common/muchUsefulWow.js"></script>
+    <script type="text/javascript" src="js/index/init.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=initAPI"></script>
     <link rel="stylesheet" href="css/common/null.css">
     <link rel="stylesheet" href="css/common/styles.css">
     <link rel="stylesheet" href="css/index.css">
-    <script type="text/javascript" src="js/common/muchUsefulWow.js"></script>
+
     <script type="text/javascript" src="js/common/header.js"></script>
     <script type="text/javascript" src="js/index/styles.js"></script>
+    <script type="text/javascript" src="js/index/interface.js"></script>
 </head>
 <body>
     <div id="header">
@@ -24,37 +28,83 @@
         <div id="contactsLabelLine" class="line"></div>
     </div>
 
-    <div id="main">
+    <div id="main" class="page">
         <div id="INeedHelp">Я переселенец, мне нужна помощь</div>
         <div id="personLogo"></div>
 
 
         <div id="helpCityLabel">Город:</div>
-        <input type="text" placeholder="Введите название города" id="helpCity">
-        <div id="tip">*Введите название населенного пункта, в котором вы находитесь</div>
-        <div id="helpBoxesLabel">Потребности:</div>
-        <div id="boxesL">
-            <input type="checkbox" id="home" name="home" value="home"><p id="homeLabel">Жилье</p><br>
+        <form id="getHelp">
+            <input type="text" placeholder="Введите название города" id="helpCity" name="city" autocomplete="off">
+            <div id="autocomplete">
+                <table style="width: 100%; background-color: white">
+                    <tr> <td class="autocompleteResult">fafas</td> </tr>
+                    <tr> <td class="autocompleteResult">fafas</td> </tr>
+                    <tr> <td class="autocompleteResult">fafas</td> </tr>
+                </table>
+            </div>
+            <div id="tip">*Введите название населенного пункта, в котором вы находитесь или куда собираетесь ехать</div>
+            <div id="helpBoxesLabel">Потребности:</div>
+            <div id="boxesL">
+                <input type="checkbox" id="home" name="home" value="true"><p id="homeLabel">Жилье</p><br>
 
-            <input type="checkbox" id="job" name="job" value="job"><p id="jobLabel">Работа</p><br>
+                <input type="checkbox" id="job" name="job" value="true"><p id="jobLabel">Работа</p><br>
 
-            <input type="checkbox" id="cloth" name="cloth" value="cloth"><p id="clothLabel">Одежда</p><br>
+                <input type="checkbox" id="cloth" name="cloth" value="true"><p id="clothLabel">Одежда</p><br>
 
-            <input type="checkbox" id="school" name="school" value="school"><p id="schoolLabel">Школа</p><br>
+                <input type="checkbox" id="school" name="school" value="true"><p id="schoolLabel">Школа</p><br>
+            </div>
+
+            <div id="boxesR">
+                <input type="checkbox" id="garden" name="kinderGarden" value="true"><p id="gardenLabel">Детский сад</p><br>
+
+                <input type="checkbox" id="law" name="law" value="true"><p id="lawLabel">Правовая помощь</p><br>
+
+                <input type="checkbox" id="drive" name="drive" value="true"><p id="driveLabel">Доезд</p><br>
+            </div>
+
+            <div id="helpTelLabel">Номер телефона:</div>
+            <input type="text" placeholder="Введите свой номер телефона" id="helpTel" name="phone">
+
+            <button id="findButt">НАЙТИ ПОМОЩЬ</button>
+        </form>
+        <div id="results">
+            <table border="1px" style="width: 100%">
+
+                <tr>
+                    <td style="width: 20%; font-family: ProximaBold">Имя/Организация</td>
+                    <td style="width: 60%; font-family: ProximaBold">Поможет с такими потребностями:</td>
+                    <td style="width: 20%; font-family: ProximaBold">Номер телефона</td>
+                </tr>
+
+                <!--<tr>
+                    <td style="width: 20%">Владимир</td>
+                    <td style="width: 60%" class="phoneResult">жилье работа проезд школа</td>
+                    <td class="phoneResult" style="width: 20%">+380971877760</td>
+                </tr>-->
+
+                <!--<tr>
+                    <td style="width: 20%"></td>
+                    <td style="width: 60%" class="phoneResult">Ничего не найдено, попробуйте позже</td>
+                    <td class="phoneResult" style="width: 20%"></td>
+                </tr>-->
+
+            </table>
         </div>
-
-        <div id="boxesR">
-            <input type="checkbox" id="garden" name="garden" value="garden"><p id="gardenLabel">Детский сад</p><br>
-
-            <input type="checkbox" id="law" name="law" value="law"><p id="lawLabel">Правовая помощь</p><br>
-
-            <input type="checkbox" id="drive" name="drive" value="drive"><p id="driveLabel">Доезд</p><br>
-        </div>
-
-        <div id="helpTelLabel">Номер телефона:</div>
-        <input type="text" placeholder="Введите свой номер телефона" id="helpTel">
-        <button id="findButt">НАЙТИ ПОМОЩЬ</button>
 
     </div>
+
+    <div id="iCanHelp" class="page">
+
+    </div>
+
+    <div id="aboutUs" class="page">
+
+    </div>
+
+    <div id="contacts" class="page">
+
+    </div>
+
 </body>
 </html>

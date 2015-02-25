@@ -1,5 +1,6 @@
 body{
     background-color: #5D6D87;
+    font-family: Proxima;
 }
 
 #main{
@@ -18,7 +19,7 @@ body{
 
 #personLogo{
     position: absolute;
-    background-image: url("../img/personLogo.png");
+    background-image: url("../img/personLogo.svg");
     background-size: 100%;
     width: 6.81%;
     top: 13%;
@@ -57,7 +58,7 @@ body{
      border-radius: 6px;
      font-family: 'ProximaExtrabold';
      color: white;
-     padding-top: 1%;
+     line-height: 110%;
  }
 
 #findButt:hover{
@@ -82,7 +83,7 @@ body{
 
 #tip{
     position: absolute;
-    top: 37%;
+    top: 37.5%;
     width: 40%;
     font-family: 'ProximaLight';
     opacity: 0.56;
@@ -194,4 +195,45 @@ body{
     position: absolute;
     top: 55%;
     left: 6%;
+}
+
+#results{
+    display: none;
+    position: absolute;
+    border-radius: 6px;
+    width: 100%;
+    top: 100%;
+    background: white;
+    font-family: Proxima;
+}
+
+.phoneResult{
+    font-family: ProximaLight;
+}
+
+td{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#autocomplete{
+    position: absolute;
+    width: 39.2156%;
+    top: 36%;
+    border-radius: 3px;
+    z-index: 10;
+    display:none;
+}
+
+.autocompleteResult{
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid gray;
+    cursor: pointer;
+    padding-left: 3px;
+}
+
+.autocompleteResult:hover{
+    background-color: cornflowerblue;
 }

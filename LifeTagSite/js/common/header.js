@@ -4,47 +4,52 @@
 
 $(document).ready(function(){
     //hovers for labels 
-    $('#mainLabel').hover(
-        function(){
-            $('#mainLabelLine').css("display", "block");
-            $(this).css("cursor", "pointer");
-
-        },function(){
-            $('#mainLabelLine').css("display", "none");
-            $(this).css("cursor", "default");
+    $('#mainLabel').click(function(){
+        $('.line').each(function( index ) {
+            $(this).css("display", "none");
+        });
+        $('.page').each(function( index ) {
+            $(this).css("display", "none");
+        });
+        $('#mainLabelLine').css("display", "block");
+        $('#main').css("display", "block");
     });
 
 
-    $('#helpLabel').hover(
-        function(){
-            $('#helpLabelLine').css("display", "block");
-            $(this).css("cursor", "pointer");
-
-        },function(){
-            $('#helpLabelLine').css("display", "none");
-            $(this).css("cursor", "default");
+    $('#helpLabel').click(function(){
+        $('.line').each(function( index ) {
+            $(this).css("display", "none");
+        });
+        $('.page').each(function( index ) {
+            $(this).css("display", "none");
+        });
+        $('#helpLabelLine').css("display", "block");
+        $('#iCanHelp').css("display", "block");
     });
 
 
-    $('#aboutLabel').hover(
-        function(){
-            $('#aboutLabelLine').css("display", "block");
-            $(this).css("cursor", "pointer");
-
-        },function(){
-            $('#aboutLabelLine').css("display", "none");
-            $(this).css("cursor", "default");
+    $('#aboutLabel').click(function(){
+        $('.line').each(function( index ) {
+            $(this).css("display", "none");
+        });
+        $('.page').each(function( index ) {
+            $(this).css("display", "none");
+        });
+        $('#aboutLabelLine').css("display", "block");
+        $('#aboutUs').css("display", "block");
     });
 
-     $('#contactsLabel').hover(
-        function(){
-            $('#contactsLabelLine').css("display", "block");
-            $(this).css("cursor", "pointer");
-
-        },function(){
-            $('#contactsLabelLine').css("display", "none");
-            $(this).css("cursor", "default");
+    $('#contactsLabel').click(function(){
+        $('.line').each(function( index ) {
+            $(this).css("display", "none");
+        });
+        $('.page').each(function( index ) {
+            $(this).css("display", "none");
+        });
+        $('#contactsLabelLine').css("display", "block");
+        $('#contacts').css("display", "block");
     });
+
 });
 
 function styleHeader(){

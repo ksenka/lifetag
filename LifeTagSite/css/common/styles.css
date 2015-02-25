@@ -13,6 +13,11 @@
     src: url("../../fonts/Light.otf") format("opentype");
 }
 
+@font-face {
+    font-family: 'Proxima';
+    src: url("../../fonts/Regular.otf") format("opentype");
+}
+
 .line{
     background-color: #464744;
     position: absolute;
@@ -41,9 +46,11 @@
     position: absolute;
     width: 7%;
     left: 25.9166%;
+    cursor: pointer;
 }
 
 #mainLabelLine{
+    display: block;
     width: 8.5%;
 }
 
@@ -51,9 +58,11 @@
     position: absolute;
     width: 7%;
     left: 45.7777%;
+    cursor: pointer;
 }
 
 #helpLabelLine{
+    display: none;
     width: 8%;
 }
 
@@ -61,9 +70,11 @@
     position: absolute;
     width: 7%;
     left: 64.3194%;
+    cursor: pointer;
 }
 
 #aboutLabelLine{
+    display: none;
     width: 6%;
 }
 
@@ -71,9 +82,11 @@
     position: absolute;
     width: 7%;
     left: 81.3055%;
+    cursor: pointer;
 }
 
 #contactsLabelLine{
+    display: none;
     width: 9.6%;
 }
 

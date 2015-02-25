@@ -45,6 +45,8 @@ function style(){
     fontByHeight("#gardenLabel", 0.9);
     fontByHeight("#schoolLabel", 0.9);
     fontByHeight("#findButt", 0.6);
+    fontByWidth("#results", 0.025);
+    fontByWidth(".autocompleteResult", 0.07);
 
     //position
     centerHorizontal('#main', "0px");
@@ -56,6 +58,7 @@ function style(){
     centerHorizontal('#boxesL', "3.2%");
     centerHorizontal('#boxesR', "25%");
     centerHorizontal('#findButt', "0px");
+    centerHorizontal('#autocomplete', "0px");
 
     topByWidth("#main", 0.13);
 

@@ -45,6 +45,12 @@ function fontByHeight(identifier, proportion){
     });
 }
 
+function fontByWidth(identifier, proportion){
+    $(identifier).each(function() {
+        $(this).css('font-size', $(this).width()*proportion);
+    });
+}
+
 //center vertical and horizontal
 function centerAll(identifier){
     centerHorizontal(identifier, "0px");
