@@ -7,10 +7,12 @@ function style(){
     styleHeader();
 
     adapt(1.1, "#main", "63.125%", "90%");
+    adapt(1.1, "#iCanHelp", "90%", "90%");
 
     //size
+    //find help
     heightByWidth("#main", 0.8112);
-    heightByWidth("#INeedHelp", 0.1285);
+    heightByWidth("#INeedHelp", 0.12);
     heightByWidth("#helpCity", 0.12);
     heightByWidth("#helpCityLabel", 0.2);
     heightByWidth("#helpTel", 0.12);
@@ -28,6 +30,25 @@ function style(){
     heightByWidth("#schoolLabel", 0.1);
     heightByWidth("#findButt", 0.15);
     heightByWidth("#helpBoxesLabel", 0.2);
+
+    //give help
+    heightByWidth("#iCanHelp", 0.6);
+    heightByWidth("#volonter", 0.9);
+    heightByWidth("#donation", 1.2);
+    heightByWidth("#iAmVolonter", 0.2);
+    heightByWidth(".enterSite", 0.1);
+    heightByWidth("#login", 0.15);
+    heightByWidth("#pass", 0.15);
+    heightByWidth("#loginButton", 0.15);
+    heightByWidth("#registr", 0.2);
+    heightByWidth("#helpProject", 0.083);
+    heightByWidth("#description", 0.1);
+    heightByWidth("#donateBoxesL", 0.9);
+    heightByWidth("#donateBoxesR", 0.9);
+    heightByWidth("input[type=radio].radioBox + label.radioLabel", 1);
+    heightByWidth(".labelDonate", 0.3)
+    heightByWidth("#diffPrice", 0.15);
+    heightByWidth("#donateButton", 0.2);
 
     //font
     fontByHeight("#INeedHelp", 0.42);
@@ -48,6 +69,19 @@ function style(){
     fontByWidth("#results", 0.025);
     fontByWidth(".autocompleteResult", 0.07);
 
+    fontByHeight("#iAmVolonter", 0.42);
+    fontByHeight(".enterSite", 0.7);
+    fontByHeight("#login", 0.45);
+    fontByHeight("#pass", 0.45);
+    fontByHeight("#loginButton", 0.7);
+    fontByHeight("#registr", 0.6);
+    fontByHeight("#helpProject", 1);
+    fontByHeight("#description", 0.65);
+    fontByHeight(".labelDonate", 0.5);
+    fontByHeight("#diffPrice", 0.6);
+    fontByHeight("#donateButton", 0.5);
+
+
     //position
     centerHorizontal('#main', "0px");
     centerHorizontal("#INeedHelp", "0px");
@@ -60,8 +94,14 @@ function style(){
     centerHorizontal('#findButt', "0px");
     centerHorizontal('#autocomplete', "0px");
 
-    topByWidth("#main", 0.13);
+    centerHorizontal('#iCanHelp', "0px");
+    centerHorizontal('#vline', "1px");
+    centerHorizontal('#loginButton', "0px");
+    centerHorizontal('#description', "0px");
+    centerHorizontal('#donateButton', "0px");
 
+    topByWidth("#main", 0.13);
+    topByWidth("#iCanHelp", 0.13);
 
 }
 

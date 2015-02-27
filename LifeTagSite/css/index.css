@@ -50,6 +50,7 @@ body{
 }
 
 #findButt{
+     padding-top: 1%;
      position: absolute;
      width: 43%;
      top: 80%;
@@ -59,12 +60,12 @@ body{
      font-family: 'ProximaExtrabold';
      color: white;
      line-height: 110%;
+     cursor: pointer;
  }
 
 #findButt:hover{
     background-color: #343d4c;
     color: #c3c5be;
-    cursor: pointer;
 }
 
 #helpTel{
@@ -236,4 +237,265 @@ td{
 
 .autocompleteResult:hover{
     background-color: cornflowerblue;
+}
+
+#iCanHelp{
+    top: 22.9492%;
+    position: absolute;
+    width: 90%;
+
+}
+
+#vline{
+    opacity: 0.2;
+    position: absolute;
+    width: 1px;
+    top: 5%;
+    height: 80%;
+    border-left: 1px solid black;
+}
+
+#donation{
+    position: absolute;
+    width: 45%;
+    left: 52.5%;
+
+    width: 45%;
+}
+
+#volonter{
+    position: absolute;
+    width: 45%;
+    top: 25%;
+    left: 5%;
+
+}
+
+
+#iAmVolonter{
+    position: absolute;
+    width: 100%;
+    font-family: 'ProximaExtrabold';
+    color: white;
+    text-align: center;
+}
+
+.enterSite{
+    position: absolute;
+    width: 80%;
+    left: 3%;
+    font-family: 'Proxima;
+    color: white;
+}
+
+#loginLabel{
+    top: 15%;
+    left: 8.3%;
+}
+
+#passLabel{
+    top: 27%;
+}
+
+#login{
+    position: absolute;
+    width: 60%;
+    top: -12%;
+    margin-left: 2%;
+    font-family: ProximaLight;
+}
+
+#pass{
+    position: absolute;
+    width: 60%;
+    top: -12%;
+    margin-left: 2%;
+    font-family: ProximaLight;
+}
+
+#loginButton{
+    position: absolute;
+    width: 60%;
+    top: 38.5%;
+    background-color: #464744;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Proxima';
+    color: white;
+    cursor: pointer;
+}
+
+#registr{
+    position: absolute;
+    width: 30%;
+    left: 41%;
+    top: 51%;
+    text-decoration: underline;
+    font-family: 'ProximaLight';
+    opacity: 0.56;
+    color: white;
+    cursor: pointer;
+}
+
+#loginButton:hover{
+    background-color: #343d4c;
+    color: #c3c5be;
+}
+
+#registr:hover{
+    opacity: 1;
+}
+
+#helpProject{
+    position: absolute;
+    width: 100%;
+    top: 9%;
+    text-align: center;
+    font-family: 'ProximaExtrabold';
+    color: white;
+}
+
+#description{
+    position: absolute;
+    width: 50%;
+    top: 19%;
+    text-align: center;
+    font-family: 'ProximaLight';
+    opacity: 0.6;
+    color: white;
+}
+
+#donateBoxesL{
+    position: absolute;
+    width: 40%;
+    left: 10%;
+    top: 30%;
+}
+
+#donateBoxesR{
+    position: absolute;
+    width: 40%;
+    left: 55%;
+    top: 30%;
+
+}
+
+input[type=radio].radioBox{
+    position:absolute;
+    z-index:-1000;
+    left:-1000px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height:1px;
+    width:1px;
+    margin:-1px;
+    padding:0;
+    border:0;
+}
+
+label.radioLabel{
+    position: absolute;
+    background-image:url(../img/radio.svg);
+    background-size: 201%;
+    left: 5%;
+}
+
+#one{
+    top: 13.75%;
+}
+
+#two{
+    top: 41.25%;
+}
+
+#three{
+    top: 68.5%;
+}
+
+#oneL{
+    top: 16%;
+}
+
+#twoL{
+    top: 44%;
+}
+
+#threeL{
+    top: 71%;
+}
+
+#four{
+    top: 13.75%;
+}
+
+#five{
+    top: 41.25%;
+}
+
+#six{
+    top: 68.5%;
+}
+
+#fourL{
+    top: 16%;
+}
+
+#fiveL{
+    top: 44%;
+}
+
+#sixL{
+    top: 71%;
+}
+
+input[type=radio].radioBox + label.radioLabel{
+    width: 15%;
+    display:inline-block;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    cursor:pointer;
+}
+
+input[type=radio].radioBox:checked + label.radioLabel {
+    background-position: 98.35% 0;
+}
+
+.labelDonate{
+    left: 25%;
+    position: absolute;
+    width: 60%;
+    font-family: 'ProximaLight';
+    opacity: 0.6;
+    color: white;
+}
+
+#seven{
+    left: 30%;
+    top: 96%;
+
+}
+
+#diffPrice{
+    position: absolute;
+    width: 100%;
+    top: 95%;
+    left: 55%;
+    font-family: ProximaLight;
+}
+
+#donateButton{
+    padding-top: 1%;
+    position: absolute;
+    width: 50%;
+    top: 68%;
+    background-color: #4dff55;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Proxima';
+    color: white;
+    cursor: pointer;
+}
+
+#donateButton:hover{
+    background-color: #1aff25;
 }

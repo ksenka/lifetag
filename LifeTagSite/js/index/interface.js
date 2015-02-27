@@ -141,7 +141,7 @@ $(document).ready(function(){
                 if (res == ""){
                     res += "\n<tr> \
                     <td style=\"width: 20%\"></td>\
-                        <td style=\"width: 60%\" class=\"phoneResult\">Ничего не найдено, попробуйте позже</td>\
+                        <td style=\"width: 60%\" class=\"phoneResult\">Нічого не знайдено, спробуйте пізніше</td>\
                         <td style=\"width: 20%\"></td>\
                     </tr>";
                 }
