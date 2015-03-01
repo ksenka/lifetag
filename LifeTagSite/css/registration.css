@@ -1,0 +1,166 @@
+body{
+    background-color: #5D6D87;
+    font-family: Proxima;
+}
+
+#mainReg{
+    position: absolute;
+    width: 80%;
+
+}
+
+#beVol{
+    position: absolute;
+    width: 100%;
+    font-family: 'ProximaExtrabold';
+    color: white;
+    text-align: center;
+}
+
+#inputs{
+    position: absolute;
+    width: 40%;
+    left: 50%;
+
+}
+
+.inputReg{
+    position: absolute;
+    width: 85%;
+    font-family: 'ProximaLight';
+}
+
+#nameVol, #nameLabel{
+    top: 20%;
+}
+
+#surnameVol, #surnameLabel{
+    top: 40%;
+}
+
+#email, #emailLabel{
+    top: 60%;
+}
+
+#password, #passLabel{
+    top: 80%;
+}
+
+#submitPass, #submitPassLabel{
+    top: 100%;
+}
+
+#telephone, #telephoneLabel{
+    top: 120%;
+}
+
+#submitTel, #submitTelephoneLabel{
+    top: 140%;
+}
+
+#labels{
+    position: absolute;
+    width: 40%;
+    top: 0.8%;
+    left: 9%;
+}
+
+.labelsText{
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    color: white;
+    font-family: ProximaBold;
+    text-align: right;
+}
+
+#repeat{
+    position: absolute;
+    width: 100%;
+    top: 133%;
+    font-family: 'proximalight';
+    opacity: 0.8;
+    color: white;
+}
+
+#repeat span{
+    text-decoration: underline;
+    font-family: 'proximabold';
+    opacity: 1;
+}
+
+#telephone, #submitTel{
+    width: 75%;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.telButt{
+    position: absolute;
+    width: 9.5%;
+    top: 120%;
+    left: 77%;
+    background-image: url(../img/submNoActive.svg);
+    background-size: 100%;
+    opacity: 0.7;
+    cursor: pointer;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.telButt:hover{
+    opacity: 1;
+}
+
+
+
+#submitTel, #submitButt, #agreeLabel, #agree, #register, #submitTelephoneLabel{
+    display: none;
+}
+
+#submitButt{
+    top: 140%;
+}
+
+#agreeLabel{
+
+    position: absolute;
+    width: 80%;
+    font-family: 'proximalight';
+    color: white;
+    top: 155%;
+    opacity: 0.8;
+    left: 5%;
+}
+
+#agree{
+
+    position: absolute;
+    top: 155%;
+}
+
+#agreeLabel span{
+    opacity: 1;
+    font-family: 'proximabold';
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#register{
+
+    position: absolute;
+    width: 80%;
+    background-color: #464744;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Proxima';
+    color: white;
+    cursor: pointer;
+    top: 165%;
+}
+
+#register:hover{
+    background-color: #343d4c;
+    color: #c3c5be;
+}
+

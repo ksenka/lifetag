@@ -49,6 +49,10 @@ function style(){
     heightByWidth(".labelDonate", 0.3)
     heightByWidth("#diffPrice", 0.15);
     heightByWidth("#donateButton", 0.2);
+    heightByWidth("#helloVol", 0.9);
+    heightByWidth("#helloName", 0.2);
+    heightByWidth("#inButt", 0.15);
+    heightByWidth("#logout", 0.15);
 
     //font
     fontByHeight("#INeedHelp", 0.42);
@@ -80,7 +84,9 @@ function style(){
     fontByHeight(".labelDonate", 0.5);
     fontByHeight("#diffPrice", 0.6);
     fontByHeight("#donateButton", 0.5);
-
+    fontByHeight("#helloName", 0.42);
+    fontByHeight("#inButt", 0.5);
+    fontByHeight("#logout", 0.5)
 
     //position
     centerHorizontal('#main', "0px");
@@ -99,6 +105,8 @@ function style(){
     centerHorizontal('#loginButton', "0px");
     centerHorizontal('#description', "0px");
     centerHorizontal('#donateButton', "0px");
+    centerHorizontal('#inButt', "0px");
+    centerHorizontal('#logout', "0px");
 
     topByWidth("#main", 0.13);
     topByWidth("#iCanHelp", 0.13);

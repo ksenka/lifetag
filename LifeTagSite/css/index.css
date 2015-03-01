@@ -243,7 +243,7 @@ td{
     top: 22.9492%;
     position: absolute;
     width: 90%;
-
+    display: none;
 }
 
 #vline{
@@ -266,13 +266,13 @@ td{
 #volonter{
     position: absolute;
     width: 45%;
-    top: 25%;
+    top: 9%;
     left: 5%;
-
+    display: none;
 }
 
 
-#iAmVolonter{
+#iAmVolonter, #helloName{
     position: absolute;
     width: 100%;
     font-family: 'ProximaExtrabold';
@@ -289,12 +289,12 @@ td{
 }
 
 #loginLabel{
-    top: 15%;
+    top: 34%;
     left: 8.3%;
 }
 
 #passLabel{
-    top: 27%;
+    top: 52%;
 }
 
 #login{
@@ -316,7 +316,7 @@ td{
 #loginButton{
     position: absolute;
     width: 60%;
-    top: 38.5%;
+    top: 70%;
     background-color: #464744;
     border: none;
     border-radius: 6px;
@@ -329,7 +329,7 @@ td{
     position: absolute;
     width: 30%;
     left: 41%;
-    top: 51%;
+    top: 82%;
     text-decoration: underline;
     font-family: 'ProximaLight';
     opacity: 0.56;
@@ -498,4 +498,46 @@ input[type=radio].radioBox:checked + label.radioLabel {
 
 #donateButton:hover{
     background-color: #1aff25;
+}
+
+#helloVol{
+    position: absolute;
+    width: 40%;
+    top: 9%;
+    left: 5%;
+
+}
+
+#inButt{
+    position: absolute;
+    width: 70%;
+    top: 20%;
+    background-color: #464744;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Proxima';
+    color: white;
+    cursor: pointer;
+}
+
+#logout{
+    position: absolute;
+    width: 70%;
+    top: 40%;
+    background-color: #464744;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Proxima';
+    color: white;
+    cursor: pointer;
+}
+
+#inButt:hover{
+    background-color: #343d4c;
+    color: #c3c5be;
+}
+
+#logout:hover{
+    background-color: #343d4c;
+    color: #c3c5be;
 }

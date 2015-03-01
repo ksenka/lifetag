@@ -52,6 +52,7 @@
 }
 
 #mainLabelLine{
+    display: block;
     width: 8.7%;
     left: 25.9166%;
 }

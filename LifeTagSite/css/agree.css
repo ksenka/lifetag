@@ -1,0 +1,30 @@
+body{
+    background-color: #5D6D87;
+    font-family: Proxima;
+}
+
+#headLabel{
+    position: absolute;
+    width: 50%;
+    top: 3%;
+    font-family: 'ProximaExtrabold';
+    color: white;
+    text-align: center;
+
+}
+
+
+
+#mainText{
+    top: 10%;
+    position: absolute;
+    width: 90%;
+    font-family: 'ProximaLight';
+    color: white;
+    opacity: 0.6;
+    line-height: 120%;
+}
+
+.boldText{
+    font-family: 'ProximaBold';
+}
