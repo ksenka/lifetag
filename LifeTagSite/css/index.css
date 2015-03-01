@@ -268,7 +268,7 @@ td{
     width: 45%;
     top: 9%;
     left: 5%;
-    display: none;
+    /*display: none;*/
 }
 
 
@@ -501,6 +501,7 @@ input[type=radio].radioBox:checked + label.radioLabel {
 }
 
 #helloVol{
+    display: none;
     position: absolute;
     width: 40%;
     top: 9%;

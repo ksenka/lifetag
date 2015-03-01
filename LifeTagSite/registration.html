@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>LifeTag</title>
+    <script type="text/javascript" src="js/common/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/common/muchUsefulWow.js"></script>
+    <script type="text/javascript" src="js/index/init.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=initAPI"></script>
+    <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="css/common/null.css">
+    <link rel="stylesheet" href="css/common/styles.css">
+    <link rel="stylesheet" href="css/registration.css">
+
+    <script type="text/javascript" src="js/common/header.js"></script>
+    <script type="text/javascript" src="js/registration/styles.js"></script>
+    <script type="text/javascript" src="js/registration/interface.js"></script>
+
+</head>
+<body>
+    <div id="header">
+        <img src="img/lifetaglogo.svg" alt="logo" id="lifetaglogo">
+        <div id="mainLabel" class="label">Головна</div>
+        <div id="mainLabelLine" class="line"></div>
+        <div id="helpLabel" class="label">Реєстрація</div>
+        <div id="helpLabelLine" class="line"></div>
+        <div id="aboutLabel" class="label">Про нас</div>
+        <div id="aboutLabelLine" class="line"></div>
+        <div id="contactsLabel" class="label">Контакти</div>
+        <div id="contactsLabelLine" class="line"></div>
+    </div>
+    <div id="mainReg" class="page">
+        <div id="beVol">Стати волонтером</div>
+        <div id="inputs">
+            <input type="text" placeholder="Введіть ваше і'мя" class="inputReg" id="nameVol" name="nameVol" autocomplete="off">
+            <input type="text" placeholder="Введіть ваше прізвище" class="inputReg" id="surnameVol" name="surnameVol" autocomplete="off">
+            <input type="text" placeholder="Введіть ваш email" class="inputReg" id="email" name="email" autocomplete="off">
+            <input type="password" placeholder="Введіть пароль" class="inputReg" id="password" name="password" autocomplete="off">
+            <input type="password" placeholder="Введіть пароль ще раз" class="inputReg" id="submitPass" name="submitPass" autocomplete="off">
+            <input type="text" placeholder="Введіть контактний телефон" class="inputReg" id="telephone" name="telephone" autocomplete="off">
+            <div id="submitTelButt" class="telButt"></div>
+            <div id="submitButt" class="telButt"></div>
+            <p id="repeat">*Якщо ви не отримали смс протягом 60 секунд натисніть <span>тут</span>.</p>
+            <input type="text" placeholder="Введіть код з смс" class="inputReg" id="submitTel" name="submitTel" autocomplete="off">
+            <input type="checkbox" id="agree" name="agree"><label id="agreeLabel">Я згоден з <a href="agree.html" target="_blank">правилами</a> сайту</label>
+            <button id="register">Зареєструватись</button>
+        </div>
+        <div id="labels">
+            <p class="labelsText" id="nameLabel">Ім'я:</p>
+            <p class="labelsText" id="surnameLabel">Прізвище:</p>
+            <p class="labelsText" id="emailLabel">Електронна пошта:</p>
+            <p class="labelsText" id="passLabel">Пароль:</p>
+            <p class="labelsText" id="submitPassLabel">Підтвердження паролю:</p>
+            <p class="labelsText" id="telephoneLabel">Контактний телефон:</p>
+            <p class="labelsText" id="submitTelephoneLabel">Код підтвердження:</p>
+        </div>
+    </div>
+</body>
+</html>

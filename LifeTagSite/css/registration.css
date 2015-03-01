@@ -139,10 +139,11 @@ body{
     top: 155%;
 }
 
-#agreeLabel span{
+#agreeLabel a{
     opacity: 1;
     font-family: 'proximabold';
     cursor: pointer;
+    color: white;
     text-decoration: underline;
 }
 

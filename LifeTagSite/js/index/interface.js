@@ -15,6 +15,10 @@ var dictionary = {
 
 $(document).ready(function(){
 
+    $('#registr').click(function(){
+        window.location = "registration.html";
+    });
+
     $("#helpCity").focus(function(){
         if (cities == null){
             gapi.client.lifetagapi.getCities().execute(function(resp) {

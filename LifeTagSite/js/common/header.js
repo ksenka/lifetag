@@ -13,6 +13,7 @@ $(document).ready(function(){
         });
         $('#mainLabelLine').css("display", "block");
         $('#main').css("display", "block");
+        style();
     });
 
 
@@ -25,6 +26,7 @@ $(document).ready(function(){
         });
         $('#helpLabelLine').css("display", "block");
         $('#iCanHelp').css("display", "block");
+        style();
     });
 
 
@@ -37,6 +39,7 @@ $(document).ready(function(){
         });
         $('#aboutLabelLine').css("display", "block");
         $('#aboutUs').css("display", "block");
+        style();
     });
 
     $('#contactsLabel').click(function(){
@@ -48,6 +51,7 @@ $(document).ready(function(){
         });
         $('#contactsLabelLine').css("display", "block");
         $('#contacts').css("display", "block");
+        style();
     });
 
 });
