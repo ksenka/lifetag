@@ -284,7 +284,7 @@ td{
     position: absolute;
     width: 80%;
     left: 3%;
-    font-family: 'Proxima;
+    font-family: Proxima;
     color: white;
 }
 
@@ -488,7 +488,7 @@ input[type=radio].radioBox:checked + label.radioLabel {
     position: absolute;
     width: 50%;
     top: 68%;
-    background-color: #4dff55;
+    background-color: #33cc33;
     border: none;
     border-radius: 6px;
     font-family: 'Proxima';
@@ -497,7 +497,7 @@ input[type=radio].radioBox:checked + label.radioLabel {
 }
 
 #donateButton:hover{
-    background-color: #1aff25;
+    background-color: #66cc66;
 }
 
 #helloVol{

@@ -6,7 +6,7 @@
 function centerHorizontal(identifier, offset){
         $(identifier).each(function( index ) {
             var size = $(this).outerWidth();
-            var pos = "calc(50% + " + offset + " - " + size/2 + "px)";
+            var pos = "calc(50% + " + offset + " - " + Math.floor(size/2) + "px)";
             $(this).css('left', pos);
             if ($(this).position().left<=0){
                 $(this).css('left', '0');
@@ -18,7 +18,7 @@ function centerHorizontal(identifier, offset){
 function centerVertical(identifier, offset) {
         $(identifier).each(function( index ) {
             var size = $(this).outerHeight();
-            var pos = "calc(50% + " + offset + " - " + size/2 + "px)";
+            var pos = "calc(50% + " + offset + " - " + Math.floor(size/2) + "px)";
             $(this).css('top', pos);
             if ($(this).position().top<=0){
                 $(this).css('top', '0');
@@ -28,26 +28,19 @@ function centerVertical(identifier, offset) {
 
 //height of block by it's width
 function heightByWidth(identifier, proportion){
-    $(identifier).height($(identifier).width()*proportion);
-}
-
-function checkboxSize(identifier){
-    $(identifier).height($(identifier).width());
-//    var width = "" + 1280 / $(window).width + "em";
-//    $(identifier).css("width", width);
-//    $(identifier).css("height", width);
+    $(identifier).height(Math.floor($(identifier).width()*proportion));
 }
 
 //font-size is set by height of block
 function fontByHeight(identifier, proportion){
     $(identifier).each(function() {
-        $(this).css('font-size', $(this).height()*proportion);
+        $(this).css('font-size', Math.floor($(this).height()*proportion));
     });
 }
 
 function fontByWidth(identifier, proportion){
     $(identifier).each(function() {
-        $(this).css('font-size', $(this).width()*proportion);
+        $(this).css('font-size', Math.floor($(this).width()*proportion));
     });
 }
 
@@ -60,10 +53,10 @@ function centerAll(identifier){
 //check if phone number is valid
 function isValidUkrainianNumber(field){
     var number = $(field).val();
-    if (number.length==13&&number.substr(0,4)=="+380")
+    if (number.length==13&&number.substr(0,4)=="+380"&& $.isNumeric(number.substr(1)))
         return true;
     else
-        if(number.length==10&&number.substr(0,1)=="0")
+        if(number.length==10&&number.substr(0,1)=="0"&& $.isNumeric(number))
             return true;
     return false;
 }
@@ -89,8 +82,8 @@ function adapt(proportion, classname, defaultSize, adaptedSize){
 function centerRelative(target, parent, offsetX, offsetY){
     var pxPosX = $(parent).position().left + $(parent).outerWidth()/2 - $(target).outerWidth()/2;
     var pxPosY = $(parent).position().top + $(parent).outerHeight()/2 - $(target).outerHeight()/2;
-    var posX = "calc(" + offsetX + " + " + pxPosX + "px)";
-    var posY = "calc(" + offsetY + " + " + pxPosY + "px)";
+    var posX = "calc(" + offsetX + " + " + Math.floor(pxPosX) + "px)";
+    var posY = "calc(" + offsetY + " + " + Math.floor(pxPosY) + "px)";
     $(target).css('left', posX);
     $(target).css('top', posY);
 }
@@ -98,6 +91,6 @@ function centerRelative(target, parent, offsetX, offsetY){
 
 //please do not use inside the elements with heightByWidth() applied
 function topByWidth(target, percents){
-    var posY = ($(window).width() * percents) + "px";
+    var posY = Math.floor($(window).width() * percents) + "px";
     $(target).css('top', posY);
 }

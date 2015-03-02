@@ -5,6 +5,8 @@
     <title>LifeTag</title>
     <script type="text/javascript" src="js/common/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/common/muchUsefulWow.js"></script>
+    <script type="text/javascript" src="js/common/cryptoJS.js"></script>
+    <script type="text/javascript" src="js/common/cookies.js"></script>
     <script type="text/javascript" src="js/index/init.js"></script>
     <script src="https://apis.google.com/js/client.js?onload=initAPI"></script>
     <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon" />
@@ -20,30 +22,32 @@
 <body>
     <div id="header">
         <img src="img/lifetaglogo.svg" alt="logo" id="lifetaglogo">
-        <div id="mainLabel" class="label">Головна</div>
+        <div id="mainLabel" class="label"><a href="index.html">Головна</a></div>
         <div id="mainLabelLine" class="line"></div>
-        <div id="helpLabel" class="label">Реєстрація</div>
+        <div id="helpLabel" class="label"><a href="index.html?page=register">Реєстрація</a></div>
         <div id="helpLabelLine" class="line"></div>
-        <div id="aboutLabel" class="label">Про нас</div>
+        <div id="aboutLabel" class="label"><a href="index.html?page=about">Про нас</a></div>
         <div id="aboutLabelLine" class="line"></div>
-        <div id="contactsLabel" class="label">Контакти</div>
+        <div id="contactsLabel" class="label"><a href="index.html?page=contacts">Контакти</a></div>
         <div id="contactsLabelLine" class="line"></div>
     </div>
     <div id="mainReg" class="page">
         <div id="beVol">Стати волонтером</div>
         <div id="inputs">
-            <input type="text" placeholder="Введіть ваше і'мя" class="inputReg" id="nameVol" name="nameVol" autocomplete="off">
-            <input type="text" placeholder="Введіть ваше прізвище" class="inputReg" id="surnameVol" name="surnameVol" autocomplete="off">
-            <input type="text" placeholder="Введіть ваш email" class="inputReg" id="email" name="email" autocomplete="off">
-            <input type="password" placeholder="Введіть пароль" class="inputReg" id="password" name="password" autocomplete="off">
-            <input type="password" placeholder="Введіть пароль ще раз" class="inputReg" id="submitPass" name="submitPass" autocomplete="off">
-            <input type="text" placeholder="Введіть контактний телефон" class="inputReg" id="telephone" name="telephone" autocomplete="off">
-            <div id="submitTelButt" class="telButt"></div>
-            <div id="submitButt" class="telButt"></div>
-            <p id="repeat">*Якщо ви не отримали смс протягом 60 секунд натисніть <span>тут</span>.</p>
-            <input type="text" placeholder="Введіть код з смс" class="inputReg" id="submitTel" name="submitTel" autocomplete="off">
-            <input type="checkbox" id="agree" name="agree"><label id="agreeLabel">Я згоден з <a href="agree.html" target="_blank">правилами</a> сайту</label>
-            <button id="register">Зареєструватись</button>
+            <form id="registerForm">
+                <input type="text" placeholder="Введіть ваше ім'я" class="inputReg" id="nameVol" name="nameVol" autocomplete="off">
+                <input type="text" placeholder="Введіть ваше прізвище" class="inputReg" id="surnameVol" name="surnameVol" autocomplete="off">
+                <input type="text" placeholder="Введіть ваш email" class="inputReg" id="email" name="email" autocomplete="off">
+                <input type="password" placeholder="Введіть пароль" class="inputReg" id="password" name="password" autocomplete="off">
+                <input type="password" placeholder="Введіть пароль ще раз" class="inputReg" id="submitPass" name="submitPass" autocomplete="off">
+                <input type="text" placeholder="Введіть контактний телефон" class="inputReg" id="telephone" name="telephone" autocomplete="off">
+                <div id="submitTelButt" class="telButt"></div>
+                <div id="submitButt" class="telButt"></div>
+                <p id="repeat">*Якщо ви не отримали смс протягом 60 секунд – натисніть <span><a onclick="sendCode();">тут</a></span>.</p>
+                <input type="text" placeholder="Введіть код з смс" class="inputReg" id="submitTel" name="submitTel" autocomplete="off">
+                <input type="checkbox" id="agree" name="agree"><label id="agreeLabel">Я згоден з <a href="agree.html" target="_blank">правилами</a> сайту</label>
+                <button id="register">Зареєструватись</button>
+            </form>
         </div>
         <div id="labels">
             <p class="labelsText" id="nameLabel">Ім'я:</p>
@@ -54,6 +58,17 @@
             <p class="labelsText" id="telephoneLabel">Контактний телефон:</p>
             <p class="labelsText" id="submitTelephoneLabel">Код підтвердження:</p>
         </div>
+    </div>
+
+    <div id="jsNeeded" style="position: fixed; width: 100%; height: 100%; font-size: 1.5em; font-family: Proxima; color: red; background-color: white; z-index: 100000; text-align: center;">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        Цей сайт потребує JavaScript. Переконайтесь, що Ви не використовуєте застарілий браузер і що JavaScript увімкнений в налаштуваннях Вашого браузера.
     </div>
 </body>
 </html>

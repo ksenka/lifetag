@@ -15,6 +15,8 @@ var dictionary = {
 
 $(document).ready(function(){
 
+    $("#jsNeeded").css('display', 'none');
+
     $('#registr').click(function(){
         window.location = "registration.html";
     });
@@ -110,7 +112,7 @@ $(document).ready(function(){
 
         if (counter <= 0) {
             proceed = false;
-            alert('Виберите минимум одну потребность');
+            alert('Оберіть хоча б одну потребу');
         }
 
         var number = $('#helpTel').val();
@@ -156,6 +158,93 @@ $(document).ready(function(){
             });
         }
     });
+
+    $("#loginForm").submit(function(event){
+        event.preventDefault();
+
+        var proceed = true;
+
+        if ($("#login").val() <= 3){
+            $("#login").css('box-shadow', '0 0 10px rgba(255, 0, 0, 1)');
+            $("#login").css('border', '1px solid rgba(255, 0, 0, 1)');
+            proceed = false;
+        }else{
+            $("#login").css('box-shadow', '');
+            $("#login").css('border', '');
+        }
+
+        if ($("#pass").val() <= 3){
+            $("#pass").css('box-shadow', '0 0 10px rgba(255, 0, 0, 1)');
+            $("#pass").css('border', '1px solid rgba(255, 0, 0, 1)');
+            proceed = false;
+        }else{
+            $("#pass").css('box-shadow', '');
+            $("#pass").css('border', '');
+        }
+
+        if (proceed) {
+            gapi.client.lifetagapi.login({
+                "phone": $("#login").val(),
+                "password": $("#pass").val()
+            }).execute(function (resp) {
+                if (resp["bool"]) {
+                    setCookie("phone", $("#login").val(), {expires: 3600, path: "/"});
+                    setCookie("password", CryptoJS.SHA256($("#pass").val()), {expires: 3600, path: "/"});
+                } else {
+                    //add some code in case of wrong login/password
+                    alert("Невірний номер/пароль");
+                }
+            });
+            if(getCookie("phone") != undefined)
+                gapi.client.lifetagapi.getName({
+                    "phone": $("#login").val(),
+                    "password": CryptoJS.SHA256($("#pass").val())
+                }).execute(function (resp) {
+                    setCookie("name", resp["name"], {expires: 3600, path: "/"});
+                });
+
+            if(getCookie("name") != undefined)
+                window.location.href = "profile.html";
+        }
+
+    });
+
+    var get = location.search.substring(1);
+    var request = get.split("&");
+    var params = [];
+    request.forEach(function(element){
+        var el = element.split("=");
+        params[el[0]] = el[1];
+    });
+
+    if (params["page"]=="help"){
+        $('#mainLabelLine').css("display", "none");
+        $('#main').css("display", "none");
+        $('#helpLabelLine').css("display", "block");
+        $('#iCanHelp').css("display", "block");
+        if (getCookie("phone") != null){
+            $("#volonter").css('display', 'none');
+            $("#helloVol").css('display', 'block');
+            $("#helloName").html("Привіт, " + getCookie("name"));
+        }
+        style();
+    }
+
+    if (params["page"]=="about"){
+        $('#mainLabelLine').css("display", "none");
+        $('#main').css("display", "none");
+        $('#aboutLabelLine').css("display", "block");
+        $('#aboutUs').css("display", "block");
+        style();
+    }
+
+    if (params["page"]=="contacts"){
+        $('#mainLabelLine').css("display", "none");
+        $('#main').css("display", "none");
+        $('#contactsLabelLine').css("display", "block");
+        $('#contacts').css("display", "block");
+        style();
+    }
 
 });
 

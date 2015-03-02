@@ -26,6 +26,11 @@ $(document).ready(function(){
         });
         $('#helpLabelLine').css("display", "block");
         $('#iCanHelp').css("display", "block");
+        if (getCookie("phone") != null){
+            $("#volonter").css('display', 'none');
+            $("#helloVol").css('display', 'block');
+            $("#helloName").html("Привіт, " + getCookie("name"));
+        }
         style();
     });
 

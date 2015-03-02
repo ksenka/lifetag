@@ -5,6 +5,8 @@
     <title>LifeTag</title>
     <script type="text/javascript" src="js/common/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/common/muchUsefulWow.js"></script>
+    <script type="text/javascript" src="js/common/cryptoJS.js"></script>
+    <script type="text/javascript" src="js/common/cookies.js"></script>
     <script type="text/javascript" src="js/index/init.js"></script>
     <script src="https://apis.google.com/js/client.js?onload=initAPI"></script>
     <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon" />
@@ -102,16 +104,18 @@
         <div id="vline"></div>
         <div id="volonter">
             <div id="iAmVolonter">Я волонтер</div>
-            <label class="enterSite" id="loginLabel">Логін:<input type="text" placeholder="Введіть свій логін" id="login" name="login"></label>
-            <label class="enterSite" id="passLabel">Пароль:<input type="password" placeholder="Введіть пароль" id="pass" name="pass"></label>
-            <button id="loginButton">Увійти</button>
+            <form id="loginForm">
+                <label class="enterSite" id="loginLabel">Логін:<input type="text" placeholder="Введіть свій логін" id="login" name="login"></label>
+                <label class="enterSite" id="passLabel">Пароль:<input type="password" placeholder="Введіть пароль" id="pass" name="pass"></label>
+                <button id="loginButton">Увійти</button>
+            </form>
             <div id="registr">Реєстрація</div>
         </div>
 
         <div id="helloVol">
             <div id="helloName">Привіт, Андрій!</div>
-            <button id="inButt">Особистий кабінет</button>
-            <button id="logout">Вийти</button>
+            <button id="inButt" onclick="window.location.href = 'profile.html'">Особистий кабінет</button>
+            <button id="logout" onclick="deleteCookie('name'); deleteCookie('phone'); deleteCookie('password'); window.location.href = 'index.html'">Вийти</button>
         </div>
 
         <div id="donation">
@@ -176,6 +180,17 @@
 
     <div id="contacts" class="page">
 
+    </div>
+
+    <div id="jsNeeded" style="position: fixed; width: 100%; height: 100%; font-size: 1.5em; font-family: Proxima; color: red; background-color: white; z-index: 100000; text-align: center;">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        Цей сайт потребує JavaScript. Переконайтесь, що Ви не використовуєте застарілий браузер і що JavaScript увімкнений в налаштуваннях Вашого браузера.
     </div>
 
 </body>
