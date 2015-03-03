@@ -161,11 +161,10 @@ $(document).ready(function(){
                 }
             });
 
-            var button =  $("#register");
-            button.prop('disabled', true);
+            $("#register").prop('disabled', true);
             setTimeout(function() {
-                button.prop('disabled', false);
-            }, 1000);
+                $("#register").prop('disabled', false);
+            }, 2000);
 
         }
 

@@ -156,6 +156,11 @@ $(document).ready(function(){
                 $("#results").css('display', 'block');
                 $("html, body").animate({ scrollTop: $(document).height() }, 500);
             });
+
+            $("#findButt").prop('disabled', true);
+            setTimeout(function() {
+                $("#findButt").prop('disabled', false);
+            }, 2000);
         }
     });
 
@@ -206,11 +211,11 @@ $(document).ready(function(){
             if(getCookie("name") != undefined)
                 window.location.href = "profile.html";
 
-            var button =  $("#findButt");
-            button.prop('disabled', true);
+
+            $("#loginButton").prop('disabled', true);
             setTimeout(function() {
-                button.prop('disabled', false);
-            }, 1000);
+                $("#loginButton").prop('disabled', false);
+            }, 2000);
         }
 
     });
