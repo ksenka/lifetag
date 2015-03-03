@@ -160,6 +160,13 @@ $(document).ready(function(){
                     alert("Реєстрація не вдалась, користувач з таким номером вже зареєстрований");
                 }
             });
+
+            var button =  $("#register");
+            button.prop('disabled', true);
+            setTimeout(function() {
+                button.prop('disabled', false);
+            }, 1000);
+
         }
 
 

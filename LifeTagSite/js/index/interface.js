@@ -205,6 +205,12 @@ $(document).ready(function(){
 
             if(getCookie("name") != undefined)
                 window.location.href = "profile.html";
+
+            var button =  $("#findButt");
+            button.prop('disabled', true);
+            setTimeout(function() {
+                button.prop('disabled', false);
+            }, 1000);
         }
 
     });
