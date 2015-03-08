@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>LifeTag</title>
+    <script type="text/javascript" src="js/common/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/common/muchUsefulWow.js"></script>
+    <script type="text/javascript" src="js/common/cryptoJS.js"></script>
+    <script type="text/javascript" src="js/common/cookies.js"></script>
+    <script type="text/javascript" src="js/index/init.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=initAPI"></script>
+    <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="css/common/null.css">
+    <link rel="stylesheet" href="css/common/styles.css">
+    <link rel="stylesheet" href="css/userPage.css">
+
+    <script type="text/javascript" src="js/common/header.js"></script>
+    <script type="text/javascript" src="js/userPage/styles.js"></script>
+</head>
+<body>
+<div class="overlay">
+
+</div>
+<div id="header">
+    <img src="img/lifetaglogo.svg" alt="logo" id="lifetaglogo">
+
+    <div id="mainLabel" class="label">Головна</div>
+    <div id="mainLabelLine" class="line"></div>
+    <div id="helpLabel" class="label">Мої допомоги</div>
+    <div id="helpLabelLine" class="line"></div>
+    <div id="aboutLabel" class="label">Налаштування</div>
+    <div id="aboutLabelLine" class="line"></div>
+    <div id="contactsLabel" class="label">Вихід</div>
+    <div id="contactsLabelLine" class="line"></div>
+</div>
+
+<div id="main" class="page">
+    <div id="addDiv">
+        <div id="helpCityLabel">Місто:</div>
+        <form id="giveHelp">
+            <input type="text" placeholder="Введіть назву міста" id="helpCity" name="city" autocomplete="off">
+            <div id="autocomplete">
+                <table style="width: 100%; background-color: white">
+                    <tr> <td class="autocompleteResult">fafas</td> </tr>
+                    <tr> <td class="autocompleteResult">fafas</td> </tr>
+                    <tr> <td class="autocompleteResult">fafas</td> </tr>
+                </table>
+            </div>
+
+
+            <div id="boxesOne">
+                <input type="checkbox" id="home" name="home" value="true"><p id="homeLabel">Житло</p><br>
+
+                <input type="checkbox" id="job" name="job" value="true"><p id="jobLabel">Робота</p><br>
+
+            </div>
+
+            <div id="boxesTwo">
+
+                <input type="checkbox" id="school" name="school" value="true"><p id="schoolLabel">Школа</p><br>
+
+                <input type="checkbox" id="garden" name="kinderGarden" value="true"><p id="gardenLabel">Дитячий садочок</p><br>
+
+            </div>
+
+            <div id="boxesThree">
+                <input type="checkbox" id="law" name="law" value="true"><p id="lawLabel">Правова допомога</p><br>
+
+                <input type="checkbox" id="drive" name="drive" value="true"><p id="driveLabel">Доїзд</p><br>
+
+            </div>
+
+            <div id="boxesLast">
+                <input type="checkbox" id="cloth" name="cloth" value="true"><p id="clothLabel">Одяг</p><br>
+            </div>
+
+            <button id="addButton">Додати</button>
+        </form>
+    </div>
+    <div id="myHelp">
+        <div class="cityName">Львів</div>
+        <div class="aid">
+            <div class="helpAid" id="homeY">
+               <div></div>
+               <p>Житло</p>
+            </div>
+
+            <div class="helpAid" id="jobY">
+                <div></div>
+                <p>Робота</p>
+            </div>
+
+            <div class="helpAid" id="schoolY">
+                <div></div>
+                <p>Школа</p>
+            </div>
+
+            <div class="helpAid" id="gardenY">
+                <div></div>
+                <p>Садочок</p>
+            </div>
+
+            <div class="helpAid" id="lawY">
+                <div></div>
+                <p>Правова допомога</p>
+            </div>
+
+            <div class="helpAid" id="driveY">
+                <div></div>
+                <p>Доїзд</p>
+            </div>
+
+            <div class="helpAid" id="clothY">
+                <div></div>
+                <p>Одяг</p>
+            </div>
+        </div>
+        <button class="editButton">Редагувати</button>
+
+
+    </div>
+
+
+</div>
+
+</body>
+</html>

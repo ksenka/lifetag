@@ -1,0 +1,277 @@
+body{
+    background-color: #5D6D87;
+    font-family: Proxima;
+}
+
+.line{
+    top: 56%;
+}
+
+#mainLabel{
+    position: absolute;
+    width: 12%;
+    left: 25.9166%;
+    cursor: pointer;
+}
+
+#mainLabelLine{
+    display: block;
+    width: 6.9%;
+    left: 25.9166%;
+}
+
+#helpLabel{
+    position: absolute;
+    width: 12%;
+    left: 41.7777%;
+    cursor: pointer;
+}
+
+#helpLabelLine{
+    left: 41.7777%;
+    width: 11.2%;
+}
+
+
+#aboutLabel{
+    position: absolute;
+    width: 12%;
+    left: 61%;
+    cursor: pointer;
+}
+
+#aboutLabelLine{
+    left: 61%;
+    width: 12.1%;
+}
+
+#contactsLabel{
+    position: absolute;
+    width: 12%;
+    left: 81.3055%;
+    cursor: pointer;
+}
+
+#contactsLabelLine{
+    left: 81.3055%;
+    width: 4.5%;
+}
+
+#addDiv{
+    position: absolute;
+    width: 80%;
+}
+
+#helpCity{
+    position: absolute;
+    width: 15%;
+    left: 10%;
+}
+
+#helpCityLabel{
+    position: absolute;
+    width: 15%;
+    font-family: 'ProximaBold';
+    opacity: 0.7;
+    left: 1%;
+    color: white;
+}
+
+#autocomplete{
+    top: 58%;
+    position: absolute;
+    width: 16.2%;
+    left: 10.1%;
+    border-radius: 3px;
+    z-index: 10;
+    display: none;
+
+}
+
+td{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.autocompleteResult{
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid gray;
+    cursor: pointer;
+    padding-left: 3px;
+}
+
+.autocompleteResult:hover{
+    background-color: cornflowerblue;
+}
+
+#boxesOne, #boxesTwo, #boxesThree, #boxesLast{
+    left: 30%;
+    position: absolute;
+    top: 20%;
+    width: 12.5%;
+
+}
+
+#boxesOne input, #boxesTwo input, #boxesThree input, #boxesLast input, #boxesOne p, #boxesTwo p, #boxesThree p,  #boxesLast p{
+    position: absolute;
+    width: 25%;
+    font-family: 'proxima';
+    color: white;
+}
+
+#boxesTwo{
+    left: 45%;
+}
+
+#boxesThree{
+    left: 60%;
+}
+
+#boxesLast{
+    left: 75%;
+}
+
+#boxesOne p, #boxesTwo p, #boxesThree p,  #boxesLast p{
+    left: 20%;
+}
+
+#home, #homeLabel, #school, #schoolLabel, #law, #lawLabel, #cloth, #clothLabel{
+    top: 15%;
+}
+
+#job, #jobLabel, #garden, #gardenLabel, #drive, #driveLabel{
+    top: 70%;
+}
+
+#gardenLabel{
+    top: 60%;
+}
+
+#lawLabel{
+    top: 5%;
+}
+
+#cloth{
+    top: 45%;
+}
+
+#clothLabel{
+    top: 45%;
+}
+
+#addButton{
+    left: 85%;
+    width: 15%;
+    position: absolute;
+    background-color: #464744;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Proxima';
+    color: white;
+    cursor: pointer;
+}
+
+#addButton:hover{
+    background-color: #343d4c;
+    color: #c3c5be;
+}
+
+#myHelp{
+    position: absolute;
+    width: 80%;
+}
+
+.cityName{
+    position: absolute;
+    width: 10%;
+    opacity: 0.7;
+    left: 1%;
+    top: 2%;
+    color: white;
+    font-family: 'proximabold';
+}
+
+.editButton{
+    left: 85%;
+    width: 15%;
+    position: absolute;
+    background-color: #464744;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Proxima';
+    color: white;
+    cursor: pointer;
+    padding-top: 0.5%;
+}
+
+.editButton:hover{
+    background-color: #343d4c;
+    color: #c3c5be;
+}
+
+.aid{
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 10%;
+}
+
+.helpAid{
+    position: absolute;
+    width: 12%;
+    top: 25%;
+}
+
+.helpAid p{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    color: white;
+    font-family: 'proximabold';
+}
+
+.helpAid div{
+    position: absolute;
+    top: 15%;
+    width: 20%;
+    background-image: url("../img/aidYes.svg");
+    background-size: 100%;
+}
+
+#jobY{
+    left: 10%;
+}
+
+#schoolY{
+    left: 20%;
+}
+
+#gardenY{
+    left: 31%;
+}
+
+#lawY{
+    left: 43%;
+}
+
+#driveY{
+    left: 54%;
+}
+
+#clothY{
+    left: 63%;
+}
+
+.overlay{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    background-color: rgba(0,0,0,0.8); /*dim the background*/
+}
