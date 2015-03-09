@@ -19,7 +19,39 @@
 </head>
 <body>
 <div class="overlay">
+    <div id="editBar">
+        <div id="editCityLabel">Місто:</div>
+        <form id="editGiveHelp">
+            <input type="text" placeholder="Введіть назву міста" id="newHelpCity" name="city" autocomplete="off">
+            <div id="editAutocomplete">
+                <table style="width: 100%; background-color: white">
+                    <tr> <td class="autocompleteResult">fafas</td> </tr>
+                    <tr> <td class="autocompleteResult">fafas</td> </tr>
+                    <tr> <td class="autocompleteResult">fafas</td> </tr>
+                </table>
+            </div>
+            <div id="newAids">Виберіть потреби які ви можете надати</div>
+            <div id="boxesL">
+                <input type="checkbox" id="newHome" name="home" value="true"><p id="newHomeLabel">Житло</p><br>
 
+                <input type="checkbox" id="newJob" name="job" value="true"><p id="newJobLabel">Робота</p><br>
+
+                <input type="checkbox" id="newCloth" name="cloth" value="true"><p id="newClothLabel">Одяг</p><br>
+
+                <input type="checkbox" id="newSchool" name="school" value="true"><p id="newSchoolLabel">Школа</p><br>
+            </div>
+
+            <div id="boxesR">
+                <input type="checkbox" id="newGarden" name="kinderGarden" value="true"><p id="newGardenLabel">Дитячий садочок</p><br>
+
+                <input type="checkbox" id="newLaw" name="law" value="true"><p id="newLawLabel">Правова допомога</p><br>
+
+                <input type="checkbox" id="newDrive" name="drive" value="true"><p id="newDriveLabel">Доїзд</p><br>
+            </div>
+            <button id="edit">
+                Зберегти
+            </button>
+    </div>
 </div>
 <div id="header">
     <img src="img/lifetaglogo.svg" alt="logo" id="lifetaglogo">

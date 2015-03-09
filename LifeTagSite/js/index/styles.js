@@ -17,7 +17,7 @@ function style(){
     heightByWidth("#helpCityLabel", 0.2);
     heightByWidth("#helpTel", 0.12);
     heightByWidth("#helpTelLabel", 0.2);
-    heightByWidth("#personLogo", 1);
+    heightByWidth("#personLogo", 0.986);
     heightByWidth("#tip", 0.12);
     heightByWidth("#boxesL", 0.3);
     heightByWidth("#boxesR", 0.3);

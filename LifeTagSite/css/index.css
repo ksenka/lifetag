@@ -43,7 +43,7 @@ body{
 #helpBoxesLabel{
     position: absolute;
     top: 45%;
-    left: 7%;
+    left: 13.5%;
     width: 30%;
     color: white;
     font-family: ProximaBold;
@@ -285,13 +285,13 @@ td{
     position: absolute;
     width: 80%;
     left: 3%;
-    font-family: Proxima;
+    font-family: 'proximabold';
     color: white;
 }
 
 #loginLabel{
     top: 34%;
-    left: 8.3%;
+    left: -1%;
 }
 
 #passLabel{
@@ -321,7 +321,7 @@ td{
     background-color: #464744;
     border: none;
     border-radius: 6px;
-    font-family: 'Proxima';
+    font-family: 'ProximaBold';
     color: white;
     cursor: pointer;
 }
@@ -458,7 +458,7 @@ input[type=radio].radioBox + label.radioLabel{
 }
 
 input[type=radio].radioBox:checked + label.radioLabel {
-    background-position: 98.35% 0;
+    background-position: 100% 0;
 }
 
 .labelDonate{
@@ -492,7 +492,7 @@ input[type=radio].radioBox:checked + label.radioLabel {
     background-color: #33cc33;
     border: none;
     border-radius: 6px;
-    font-family: 'Proxima';
+    font-family: 'ProximaBold';
     color: white;
     cursor: pointer;
 }
