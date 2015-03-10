@@ -155,7 +155,7 @@ $(document).ready(function(){
                     setCookie("phone", $("#login").val(), {expires: 3600, path: "/"});
                     setCookie("password", CryptoJS.SHA256($("#pass").val()), {expires: 3600, path: "/"});
                     setCookie("name", name, {expires: 3600, path: "/"});
-                    window.location.href = "index.html?page=help";
+                    window.location.href = "../../profile.html";
                 } else {
                     alert("Реєстрація не вдалась, користувач з таким номером вже зареєстрований");
                 }
